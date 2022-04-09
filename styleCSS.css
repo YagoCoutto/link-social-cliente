@@ -15,8 +15,6 @@
 
 body{
     text-align: center;
-
-    
 }
 .conteudo-topo{
     display: grid;
@@ -56,7 +54,7 @@ img{
 
 }
 main{
-    min-height: 94vh;
+    min-height: 92vh;
     min-width: 300px;/*responsividade*/
     max-width: 500px;/*responsividade*/
     background-color: white;
@@ -72,9 +70,9 @@ h1{
     font-variant: small-caps; 
     font-size: 2.5rem;
 }
-@media(min-width: 300px){
+@media(max-width: 540px){
     h1{
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 }
 div.video{
@@ -91,5 +89,4 @@ div.video > iframe{
     left: 5%;
     width: 90%;
     height: 90%;
-
 }
