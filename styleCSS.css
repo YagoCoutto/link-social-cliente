@@ -74,7 +74,7 @@ h1{
 }
 @media(max-width: 500px){
     h1{
-        font-size: 7.5vw;
+        font-size: 1.6rem;
     }
 }
 div.video{
