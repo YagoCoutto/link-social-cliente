@@ -90,7 +90,7 @@ nav {
 h1 {
     font-family: var(--font1);
     font-variant: small-caps;
-    font-size: 40px;
+    font-size: 7vw;
 
 }
 
@@ -123,8 +123,8 @@ footer {
     background-color: black;
 }
 
-@media(max-width: 510px) {
+@media(min-width: 510px) {
     h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
 }
