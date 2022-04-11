@@ -32,6 +32,7 @@ body {
 }
 
 header {
+    position: sticky;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,21 +41,26 @@ header {
     height: 30vh;
     background-color: black;
     font-size: 5vw;
+    background-image: url('./Imagens/Fitas.jpg');
 }
 
 header>img {
     width: 130px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid #F2A444;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.688);
 }
 
 header>h2 {
-    color: white;
+    color: #F2A444;
+    text-shadow: 0.2em 0.5em 0.5em black, 0 2px black, 2px 0 black, 0 -1px black;
     text-decoration: overline;
     font-family: var(--font2);
+    
 }
 
 main {
+    
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -79,14 +85,15 @@ nav {
     text-decoration: none;
     border-radius: 20px;
     color: white;
-    background-color: rgba(118, 118, 118, 0.282);
+    background-color: #262626;
     border: 1px solid rgb(92, 88, 88);
     font-family: var(--font1);
 
 }
 
 /*estilo*/
-.btn-youtube {}
+.btn-youtube {
+}
 
 h1 {
     font-family: var(--font1);
@@ -106,6 +113,7 @@ h1 {
     border-radius: 6px;
     
     
+    
 }
 
 .video-youtube {
@@ -119,9 +127,11 @@ h1 {
     border: 1px solid rgba(121, 120, 120, 0.812);
 }
 
+
 footer {
     background-color: black;
 }
+
 
 @media(min-width: 510px) {
     h1 {
