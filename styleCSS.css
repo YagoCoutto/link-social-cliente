@@ -3,92 +3,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 
 
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
-:root{
-    --font1:'Teko', sans-serif;
-    --font2:'Rubik Wet Paint', cursive;
+:root {
+    --font1: 'Teko', sans-serif;
+    --font2: 'Rubik Wet Paint', cursive;
 }
 
-body{
+body {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
     text-align: center;
 }
-.conteudo-topo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
-    align-items: center;
-}
-.titulo{
-    max-width: 100%;
-    font-size: 1rem;
-    margin-left: auto;
 
+.container {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: white;
+    max-width: 540px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
-.titulo > h2{
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 30vh;
+    background-color: black;
+}
+
+header>img {
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+header>h2 {
+    color: white;
     text-decoration: overline;
     font-family: var(--font2);
 }
-.titulo > p{
-    align-items: flex-end;
-  
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
 }
-.midias-img{
-    width: 30px;
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
-img{
-    width: 150px;
-    border-radius: 50%;
-}
-.links{
-    margin: 0px 0 0;
-}
-.links a{
-    margin: 5px;
+
+/*link*/
+.btn {
+    display: flex;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 8px 0;
     text-decoration: none;
-    color: black;
-    font-size: 15px;
-
-}
-main{
-    
-    min-height: 92vh;
-    min-width: 300px;/*responsividade*/
-    max-width: 500px;/*responsividade*/
-    background-color: white;
-    margin: auto;/*para não crescer dms em tela cheia*/
-    padding: 20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.247);
-}
-
-h1{
-    padding: 50px 0 0;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(118, 118, 118, 0.282);
+    border: 1px solid rgb(92, 88, 88);
     font-family: var(--font1);
-    font-variant: small-caps; 
-    font-size: 2.5rem;
-}
-@media(max-width: 500px){
-    h1{
-        font-size: 2.3rem;
-    }
-}
-div.video{
-    background-color: var(--cor4);
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    padding-bottom: 59%; /*RETIRAR MARCA PRETA NA LATERAL DO VIDEO*/
-    position: relative;
+
 }
 
-div.video > iframe{
+/*estilo*/
+.btn-youtube {}
+
+h1 {
+    font-family: var(--font1);
+    font-variant: small-caps;
+    font-size: 40px;
+
+}
+
+.video {
+    background-color: rgb(163, 40, 40);
+    background-image: url(./Imagens/1f36cf4196a989cc69b5f4a565b8c2d7.jpg);
+    background-repeat: repeat-x,y;
+    background-attachment: fixed;
+    background-position: -220px 18px;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 59%;
+    border: 1px solid white;
+    border-radius: 6px;
+    
+    
+}
+
+.video-youtube {
+    border-radius: 10px;
     position: absolute;
     top: 5%;
     left: 5%;
     width: 90%;
     height: 90%;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.278);
+}
+
+footer {
+    background-color: black;
+}
+
+@media(max-width: 510px) {
+    h1 {
+        font-size: 35px;
+    }
 }
