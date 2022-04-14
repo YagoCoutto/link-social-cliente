@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 * {
@@ -11,6 +14,9 @@
 :root {
     --font1: 'Teko', sans-serif;
     --font2: 'Rubik Wet Paint', cursive;
+    --font3: 'Raleway', sans-serif;
+    --font4:  'Fjalla One', sans-serif;
+    --font5: 'Bebas Neue', cursive;
 }
 
 body {
@@ -29,6 +35,9 @@ body {
     top: 0;
     left: 50%;
     transform: translate(-50%);
+    background-image: linear-gradient(to bottom, #2a0707c0, #2a17135f, #97804a1e, #b29a6e27);
+    border-right: 1px solid rgba(255, 255, 255, 0.534);
+    border-left: 1px solid rgba(255, 255, 255, 0.516);
 }
 
 header {
@@ -40,25 +49,26 @@ header {
     max-width: 100%;
     height: 30vh;
     font-size: 5vw;
+   
 }
 
 header>img {
     width: 130px;
     border-radius: 50%;
-    border: 2px solid #F2A444;
+    border: 2px solid rgba(255, 255, 255, 0.74);
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.688);
 }
 
 header>h2 {
-    color: #F2A444;
-    text-shadow: 0.2em 0.5em 0.5em black, 0 2px black, 2px 0 black, 0 -1px black;
+    color: rgba(255, 255, 255, 0.749);
+    letter-spacing: 5px;
     text-decoration: overline;
-    font-family: var(--font2);
+    font-family: var(--font4);
+
     
 }
 
 main {
-    
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -68,12 +78,12 @@ main {
 
 
 h1 {
-    font-family: var(--font1);
-    font-variant: small-caps;
-    font-size: 7vw;
-    color: #D9A25F;
-    text-shadow: 2px 2px 8px #f2a4445b;
-    background-color: rgba(0, 0, 0, 0.562);
+    font-family: var(--font5);
+    letter-spacing: 4px;
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(14, 13, 13);
+    border-radius: 1px;
 
 }
 
@@ -84,21 +94,19 @@ h1 {
     position: relative;
     padding: 20px;
     padding-bottom: 59%;
-    border-radius: 6px;
     
     
     
 }
 
 .video-youtube {
-    border-radius: 10px;
+    border-radius: 5px;
     position: absolute;
     top: 5%;
     left: 5%;
     width: 90%;
     height: 90%;
-    box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.205);
-    border: 1px solid rgba(121, 120, 120, 0.812);
+    box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.27);
 }
 
 #menu-h{
@@ -129,11 +137,11 @@ footer {
 
 @media(min-width: 510px) {
     h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 @media(min-width: 510px){
     header{
-        font-size:1.2em ;
+        font-size: 2.2em ;
     }
 }
