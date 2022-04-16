@@ -24,7 +24,6 @@ body {
     background-color: black;
     color: white;
     text-align: center;
-    background-image: url('./Imagens/nate-isaac-NzNtg2CtThs-unsplash.jpg');
     background-size: cover;
 }
 
@@ -35,9 +34,9 @@ body {
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    background-image: linear-gradient(to bottom, #2a0707c0, #2a17135f, #97804a1e, #b29a6e27);
-    border-right: 1px solid rgba(255, 255, 255, 0.534);
-    border-left: 1px solid rgba(255, 255, 255, 0.516);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.096),black);
+    border-right: 1px solid rgba(255, 255, 255, 0.053);
+    border-left: 1px solid rgba(255, 255, 255, 0.053);
 }
 
 header {
@@ -55,12 +54,12 @@ header {
 header>img {
     width: 130px;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.74);
+    border: 0.5px solid rgba(83, 46, 46, 0.74);
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.688);
 }
 
 header>h2 {
-    color: rgba(255, 255, 255, 0.749);
+    color: rgba(255, 255, 255, 0.951);
     letter-spacing: 5px;
     text-decoration: overline;
     font-family: var(--font4);
@@ -82,7 +81,7 @@ h1 {
     letter-spacing: 4px;
     font-size: 5vw;
     color: rgb(255, 255, 255);
-    background-color: rgb(14, 13, 13);
+    background-color: rgb(0, 0, 0);
     border-radius: 1px;
 
 }
@@ -106,7 +105,7 @@ h1 {
     left: 5%;
     width: 90%;
     height: 90%;
-    box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.27);
+    box-shadow: 0px 0px 8px 1px rgba(153, 153, 153, 0.27);
 }
 
 #menu-h{
@@ -120,15 +119,19 @@ h1 {
 #menu-h li a{
     display: inline-block;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     color: white;
     transition: .8s;
+    border: 1px solid rgba(255, 255, 255, 0.238);
+    border-radius: 5px;
 }
 
 #menu-h li a:hover{
-    background-color: #d9a25f99;
+    background-color: rgba(255, 255, 255, 0.344);
 }
+
+
 
 
 footer {
